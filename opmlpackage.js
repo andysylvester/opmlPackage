@@ -131,7 +131,7 @@ function stringify (theOutline) { //returns the opmltext for the outline
 function getOutlineHtml (theOutline) {
 	var htmltext = ""; indentlevel = 0;
 	function add (s) {
-		htmltext += filledString ("\t", indentlevel) + s + "\n";
+		htmltext += utils.filledString ("\t", indentlevel) + s + "\n";
 		}
 	function addSubsHtml (node) {
 		add ("<ul>"); indentlevel++;
